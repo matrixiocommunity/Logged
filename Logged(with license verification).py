@@ -332,7 +332,7 @@ def addmem(ch_t, stri):
                 sys.exit("EXIT")
         if stri == "user":
             mem = mem.capitalize()
-        for dickeys, values in ch_t.items():
+        for values in ch_t.values():
             if mem == values:
                 os.system('cls')
                 print("There is already a", stri,
